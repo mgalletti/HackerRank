@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
 
-namespace ConsoleApplication
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+    static void Main(String[] args) {
+        int n = Convert.ToInt32(Console.ReadLine());
+        string[] arr_temp = Console.ReadLine().Split(' ');
+        int[] arr = Array.ConvertAll(arr_temp,Int32.Parse);
     }
 }

@@ -1,5 +1,5 @@
---temp-output:/Users/matteogalletti/development/HackerRank/Data structures/Arrays/obj/Debug/netcoreapp1.1/
---out:/Users/matteogalletti/development/HackerRank/Data structures/Arrays/bin/Debug/netcoreapp1.1/Arrays.dll
+--temp-output:/Users/matteogalletti/development/HackerRank/Data structures/Arrays-DS/obj/Debug/netcoreapp1.1/
+--out:/Users/matteogalletti/development/HackerRank/Data structures/Arrays-DS/bin/Debug/netcoreapp1.1/Arrays-DS.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_1
@@ -9,7 +9,7 @@
 --optimize:False
 --debug-type:portable
 --emit-entry-point:True
---output-name:Arrays
+--output-name:Arrays-DS
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0
@@ -87,4 +87,4 @@
 --reference:/Users/matteogalletti/.nuget/packages/System.Threading.Timer/4.3.0/ref/netstandard1.2/System.Threading.Timer.dll
 --reference:/Users/matteogalletti/.nuget/packages/System.Xml.ReaderWriter/4.3.0/ref/netstandard1.3/System.Xml.ReaderWriter.dll
 --reference:/Users/matteogalletti/.nuget/packages/System.Xml.XDocument/4.3.0/ref/netstandard1.3/System.Xml.XDocument.dll
-/Users/matteogalletti/development/HackerRank/Data structures/Arrays/Program.cs
+/Users/matteogalletti/development/HackerRank/Data structures/Arrays-DS/Program.cs
