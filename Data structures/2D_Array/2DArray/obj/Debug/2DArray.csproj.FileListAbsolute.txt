@@ -1,5 +1,0 @@
-C:\Users\MGalletti\Development\Misc_source\C#\HacerRank\Arrays\2D_Array\2DArray\bin\Debug\2DArray.exe.config
-C:\Users\MGalletti\Development\Misc_source\C#\HacerRank\Arrays\2D_Array\2DArray\bin\Debug\2DArray.exe
-C:\Users\MGalletti\Development\Misc_source\C#\HacerRank\Arrays\2D_Array\2DArray\bin\Debug\2DArray.pdb
-C:\Users\MGalletti\Development\Misc_source\C#\HacerRank\Arrays\2D_Array\2DArray\obj\Debug\2DArray.exe
-C:\Users\MGalletti\Development\Misc_source\C#\HacerRank\Arrays\2D_Array\2DArray\obj\Debug\2DArray.pdb
