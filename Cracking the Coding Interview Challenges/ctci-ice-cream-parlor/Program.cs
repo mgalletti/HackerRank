@@ -11,51 +11,31 @@ class Solution {
             int n = Convert.ToInt32(Console.ReadLine());
             string[] a_temp = Console.ReadLine().Split(' ');
             int[] a = Array.ConvertAll(a_temp,Int32.Parse);
-            int[] ic = BuyIceCream(m, a);
-            Console.WriteLine(string.Join(" ", ic));
+            Console.WriteLine(string.Join(" ", BuyIceCream(m, a)));
         }
-    }
-    
-    static int[] BuyIceCream(int money, int[] flavours)
-    {
-        int[] result = new int[2];
-        for (int i = 0; i < flavours.Length; i++)
-        {
-            if (flavours[i] > money)
-                continue;
-            int complement = money - flavours[i];
-            int j = BSFlavour(flavours, complement, 0, flavours.Length - 1, i);
-            if (j >= 0)
-            {
-                if (i < j)
-                {
-                    result[0] = i + 1;
-                    result[1] = j + 1;
-                }
-                else
-                {
-                    result[0] = j + 1;
-                    result[1] = i + 1;
-                }
-                return result;
-            }
-        }
-        throw new ArgumentException("There's no possible combination");
-        
     }
 
-    static int BSFlavour(int[] f, int cost, int low, int high, int skip)
+    static int[] BuyIceCream(int money, int[] flavours)
     {
-        if (low > high)
-            return -1;
-        int mid = low + (high - low) / 2;
-        if (f[mid] == cost && mid != skip)
-            return mid;
-        else if (cost < f[mid])
-            return BSFlavour(f, cost, low, mid - 1, skip);
-        else if (cost > f[mid])
-            return BSFlavour(f, cost, mid + 1, high, skip);
-        else
-            return -1;
+        Dictionary<int, List<int>> prices = new Dictionary<int, List<int>>();
+
+        for (int i = 0; i < flavours.Length; i++)
+        {
+            if (!prices.ContainsKey(flavours[i]))
+                prices.Add(flavours[i], new List<int>());
+
+            prices[flavours[i]].Add(i);
+        }
+
+        for (int i = 0; i < flavours.Length; i++)
+        {
+            int complement = money - flavours[i];
+            if (prices.ContainsKey(complement))
+            {
+                prices[complement].Remove(i);
+                return new int[] { i + 1, prices[complement][0] + 1 };
+            }
+        }
+        return new int[] { 0, 0 };
     }
 }
