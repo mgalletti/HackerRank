@@ -1,2 +1,2 @@
 # HackerRank
-Projects and sources of HackerRank tracks
+Solutions for some HackerRank tracks and CTCI book problems
